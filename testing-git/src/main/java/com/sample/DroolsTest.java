@@ -13,7 +13,7 @@ public class DroolsTest {
         try {
         	
     		String hola;
-    		hola = "Hello World";
+    		hola = "Hello World"; //fgb
             // load up the knowledge base
 	        KieServices ks = KieServices.Factory.get();
     	    KieContainer kContainer = ks.getKieClasspathContainer();
