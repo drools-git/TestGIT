@@ -11,6 +11,9 @@ public class DroolsTest {
 
     public static final void main(String[] args) {
         try {
+        	
+    		String hi;
+    		hi = "Hello World";
             // load up the knowledge base
 	        KieServices ks = KieServices.Factory.get();
     	    KieContainer kContainer = ks.getKieClasspathContainer();
@@ -18,7 +21,7 @@ public class DroolsTest {
 
             // go !
             Message message = new Message();
-            message.setMessage("Hello World");
+            message.setMessage(hi);
             message.setStatus(Message.HELLO);
             kSession.insert(message);
             kSession.fireAllRules();
